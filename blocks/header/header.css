@@ -166,7 +166,6 @@ header nav .nav-brand img {
 
 .section.nav-sections {
   margin-left: auto;
-  margin-left: 400px;
 }
 
 .section.nav-sections .default-content-wrapper {
@@ -192,6 +191,19 @@ header nav .nav-brand img {
   display: flex;
   justify-content: flex-end; /* Align content to the right */
   padding-right: 24px; /* Match the padding of .nav-sections */
+}
+
+#new-div .default-content-wrapper ul li {
+  display: flex; /* Align text and icon in one line */
+  align-items: center; /* Vertically center align text and icon */
+  color: white; /* Set text color to white */
+}
+
+#new-div .default-content-wrapper ul li .icon img {
+  margin-left: 8px; /* Add spacing between text and icon */
+  width: 16px;
+  height: 16px;
+  filter: brightness(0) invert(1);
 }
 
 #new-div .default-content-wrapper {
@@ -225,14 +237,18 @@ header nav .nav-sections ul>li>ul>li {
 }
 
 .section.nav-tools .default-content-wrapper ul li {
-  margin-right: 190px;
+  margin-right: 210px;
   font-weight: 700;
   transition: color 0.3s ease;
+  color: white !important;
+}
+
+.section.nav-tools .default-content-wrapper ul li a {
+  color: white !important;
 }
 
 .section.nav-tools .default-content-wrapper ul li:hover {
-  color: #066c34;
-  border-bottom: 2px solid #066c34;
+  cursor: pointer;
 }
 
 .section.nav-tools .default-content-wrapper ul li::after {
