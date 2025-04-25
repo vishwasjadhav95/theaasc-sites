@@ -265,11 +265,11 @@ header nav[aria-expanded='true'] .nav-sections {
 }
 
 .section.nav-sections .default-content-wrapper ul {
-  color: rgba(119 119 119 / 100%);
+  color: rgb(119, 119, 119);
 }
 
 .section.nav-sections .default-content-wrapper ul>li:last-child {
-  color: rgba(7 137 66 / 100%);
+  color: rgb(7, 137, 66);
 }
 
 @media (width <= 899px) {
