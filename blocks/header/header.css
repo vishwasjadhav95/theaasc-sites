@@ -185,7 +185,7 @@ header nav .nav-brand img {
 }
 
 #new-div {
-  box-shadow: 0 -4px 8px rgba(0 0 0 / 10%), 0 4px 8px rgba(0 0 0 / 10%);
+  box-shadow: 0 -4px 8px rgb(0 0 0 / 10%), 0 4px 8px rgb(0 0 0 / 10%); /* Fixed */
   background-color: #170b95;
   width: 100%;
   color: white;
@@ -265,11 +265,11 @@ header nav[aria-expanded='true'] .nav-sections {
 }
 
 .section.nav-sections .default-content-wrapper ul {
-  color: rgba(119, 119, 119, 1);
+  color: rgb(119 119 119 / 100%); /* Fixed */
 }
 
-.section.nav-sections .default-content-wrapper ul>li:last-child {
-  color: rgba(7, 137, 66, 1);
+.section.nav-sections .default-content-wrapper ul > li:last-child {
+  color: rgb(7 137 66 / 100%); /* Fixed */
 }
 
 @media (width <= 899px) {
