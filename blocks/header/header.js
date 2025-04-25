@@ -119,6 +119,10 @@ export default async function decorate(block) {
   nav.id = 'nav';
   while (fragment.firstElementChild) nav.append(fragment.firstElementChild);
 
+  // create a new div
+  const newDiv = document.createElement('div');
+  newDiv.id = 'new-div';
+
   const classes = ['brand', 'sections', 'tools'];
   classes.forEach((c, i) => {
     const section = nav.children[i];
@@ -146,6 +150,20 @@ export default async function decorate(block) {
     });
   }
 
+  const navBrandSection = nav.querySelector('.section.nav-brand .default-content-wrapper');
+  const pTags = navBrandSection.querySelectorAll('p');
+  const lastTwoPTags = Array.from(pTags).slice(-2);
+  const wrapperDiv = document.createElement('div');
+  wrapperDiv.classList.add('brand-info');
+  lastTwoPTags.forEach((p) => wrapperDiv.appendChild(p));
+  navBrandSection.appendChild(wrapperDiv);
+
+  // Get the nav-tools section
+  const navToolsSection = nav.querySelector('#nav .nav-tools');
+  if (navToolsSection) {
+    newDiv.appendChild(navToolsSection);
+  }
+
   // hamburger for mobile
   const hamburger = document.createElement('div');
   hamburger.classList.add('nav-hamburger');
@@ -161,6 +179,7 @@ export default async function decorate(block) {
 
   const navWrapper = document.createElement('div');
   navWrapper.className = 'nav-wrapper';
+  navWrapper.appendChild(newDiv);
   navWrapper.append(nav);
   block.append(navWrapper);
 }
