@@ -1,20 +1,173 @@
+/* General Footer Styles */
 footer {
-  background-color: var(--light-color);
+  background-color: #635ac9; /* Apply the background color to the entire footer */
   font-size: var(--body-font-size-xs);
-}
-
-footer .footer > div {
-  margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
+  color: #ffffff; /* Set default text color to white */
 }
 
 footer .footer p {
   margin: 0;
+  color: #ffffff; /* Ensure paragraph text is white */
 }
 
-@media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
+/* Styles for cmp-upperheader */
+.default-content-wrapper.cmp-upperheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  color: #ffffff; /* Text color white */
+}
+
+.footer-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #ffffff; /* Ensure text inside is white */
+}
+
+.footer-logo {
+  flex: 0 0 auto;
+  padding-right: 20px;
+}
+
+.footer-links {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  margin: 0 10px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #ffffff; /* Links are white */
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #d0d0d0; /* Slightly lighter white on hover */
+}
+
+.footer-info {
+  flex: 0 0 auto;
+  padding-left: 20px;
+  text-align: left;
+  color: #ffffff; /* Ensure text is white */
+}
+
+.footer-info a {
+  color: #ffffff; /* Links are white */
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.footer-info a:hover {
+  color: #d0d0d0; /* Slightly lighter white on hover */
+}
+
+.footer-info .button-container .button {
+  background: none; /* Remove button background */
+  border: none; /* Remove button border */
+  color: #ffffff; /* Set text color to white */
+  text-decoration: underline; /* Add underline to make it look like a link */
+  font-size: inherit; /* Inherit font size from parent */
+  font-weight: normal; /* Remove bold styling */
+  padding: 0; /* Remove padding */
+  cursor: pointer; /* Ensure it still looks clickable */
+}
+
+.footer-info .button-container .button:hover {
+  color: #d0d0d0; /* Slightly lighter white on hover */
+  text-decoration: underline; /* Keep underline on hover */
+}
+
+/* Styles for middleheader */
+.middleheader {
+  text-align: justify; /* Justify the text */
+  padding: 20px;
+  background-color: #635ac9;
+  border-top: 1px solid #e2e6ec;
+  width: 64%;
+  margin-inline: auto;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+/* Styles for cmp-lowerheader */
+.default-content-wrapper.cmp-lowerheader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background-color: #635ac9; /* Apply the same background color */
+  border-top: 2px solid #e2e2e2; /* Light gray top border */
+  color: #ffffff; /* Text color white */
+}
+
+.default-content-wrapper.cmp-lowerheader > div {
+  padding-bottom: 20px;
+  text-align: center;
+  color: #ffffff; /* Ensure text is white */
+}
+
+.footer-lowerheader-links {
+  margin-bottom: 20px;
+}
+
+.footer-lowerheader-details {
+  text-align: center;
+  color: #ffffff; /* Ensure text is white */
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .default-content-wrapper.cmp-upperheader {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-content-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .middleheader {
+    padding: 10px;
+    font-size: 12px;
+    background-color: #635ac9; /* Apply the same background color */
+    color: #ffffff; /* Ensure text is white */
+  }
+
+  .default-content-wrapper.cmp-lowerheader {
+    padding: 10px;
+    background-color: #635ac9; /* Apply the same background color */
+    color: #ffffff; /* Ensure text is white */
+  }
+
+  .default-content-wrapper.cmp-lowerheader > div {
+    padding-bottom: 10px;
+    color: #ffffff; /* Ensure text is white */
   }
 }
