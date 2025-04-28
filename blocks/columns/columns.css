@@ -46,6 +46,7 @@
   margin-right: 99px;
 }
 
+
 .div-7 {
   display: flex;
   flex-direction: row;
@@ -76,38 +77,42 @@
   border-radius: 10px;
 }
 
-.agitation-wrapper>.wrapped-content {
+.columns.cmp-caregiversinfo.block.columns-1-cols .agitation-wrapper > .wrapped-content {
   flex: 0 0 75%;
 }
 
-.agitation-wrapper>.agitation-description {
+.columns.cmp-caregiversinfo.block.columns-1-cols .agitation-wrapper > .agitation-description {
   flex: 0 0 25%;
 }
 
-.div-5,
-.div-7,
-.div-8,
-.div-9,
-.div-10,
-.icon-details-container {
+/* Scoped styles for .div-5, .div-7, .div-8, .div-9, .div-10, and .icon-details-container */
+.columns.cmp-caregiversinfo.block.columns-1-cols .div-5,
+.columns.cmp-caregiversinfo.block.columns-1-cols .div-7,
+.columns.cmp-caregiversinfo.block.columns-1-cols .div-8,
+.columns.cmp-caregiversinfo.block.columns-1-cols .div-9,
+.columns.cmp-caregiversinfo.block.columns-1-cols .div-10,
+.columns.cmp-caregiversinfo.block.columns-1-cols .icon-details-container {
   padding: 10px;
   margin-bottom: 5px;
 }
 
-.div-6 p {
+/* Scoped styles for .div-6 p */
+.columns.cmp-caregiversinfo.block.columns-1-cols .div-6 p {
   line-height: 1.5;
 }
 
-.div-8 p,
-.div-9 p,
-.div-10 p,
-.icon-details-container p {
+/* Scoped styles for .div-8 p, .div-9 p, .div-10 p, and .icon-details-container p */
+.columns.cmp-caregiversinfo.block.columns-1-cols .div-8 p,
+.columns.cmp-caregiversinfo.block.columns-1-cols .div-9 p,
+.columns.cmp-caregiversinfo.block.columns-1-cols .div-10 p,
+.columns.cmp-caregiversinfo.block.columns-1-cols .icon-details-container p {
   display: flex;
   align-items: center;
   margin-bottom: 0;
 }
 
-.div-7 .icon {
+/* Scoped styles for .div-7 .icon */
+.columns.cmp-caregiversinfo.block.columns-1-cols .div-7 .icon {
   display: inline-flex;
   width: 80px;
   height: 80px;
@@ -116,21 +121,24 @@
   justify-content: center;
 }
 
-.div-7 .icon img {
+/* Scoped styles for .div-7 .icon img */
+.columns.cmp-caregiversinfo.block.columns-1-cols .div-7 .icon img {
   max-width: 100%;
   max-height: 100%;
   width: auto;
   height: auto;
 }
 
-.div-7 p {
+/* Scoped styles for .div-7 p */
+.columns.cmp-caregiversinfo.block.columns-1-cols .div-7 p {
   font-size: 1rem;
   position: relative;
 }
 
-.div-7 .div-8 p,
-.div-7 .div-9 p,
-.div-7 .div-10 p {
+/* Scoped styles for .div-7 .div-8 p, .div-7 .div-9 p, .div-7 .div-10 p */
+.columns.cmp-caregiversinfo.block.columns-1-cols .div-7 .div-8 p,
+.columns.cmp-caregiversinfo.block.columns-1-cols .div-7 .div-9 p,
+.columns.cmp-caregiversinfo.block.columns-1-cols .div-7 .div-10 p {
   display: flex;
   flex-direction: row;
   align-items: center;
