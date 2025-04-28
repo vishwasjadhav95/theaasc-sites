@@ -29,7 +29,7 @@
 
   .cmp-cardsinfo-twocard {
     display: flex; /* Align the two divs side by side */
-    gap: 20px; /* Add spacing between the cards */
+    gap: 70px; /* Add spacing between the cards */
     justify-content: center; /* Center the cards horizontally */
   }
   
@@ -38,6 +38,7 @@
     padding: 1.5rem 2rem 2rem;
     overflow: hidden;
     border-radius: 10px;
+    text-align: justify;
     background-color: #fff;
     box-shadow: -2px 12px 30px 0px rgba(1, 11, 18, 0.2);
     flex: 1; /* Ensure both cards take equal width */
@@ -55,4 +56,44 @@
   .cmp-cardsinfo-twocard .icon img {
     width: 40px; /* Adjust icon size */
     height: 40px;
+  }
+
+  .cmp-cardsinfo-singlecard {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .cmp-cardsinfo-singlecard > div {
+    position: relative;
+    padding: 1.5rem 2rem 2rem;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: -2px 12px 30px 0px rgba(1, 11, 18, 0.2);
+    margin: 0 auto; /* Center the single card */
+  }
+  
+  .cmp-cardsinfo-singlecard ul {
+    padding-left: 20px; /* Add padding for list items */
+  }
+  
+  .cmp-cardsinfo-singlecard p {
+    margin-bottom: 1rem; /* Add spacing between paragraphs */
+  }
+  
+  .cmp-cardsinfo-singlecard .icon img {
+    width: 40px; /* Adjust icon size */
+    height: 40px;
+  }
+
+  .cmp-cardsinfo-twocard > div .icon img,
+  .cmp-cardsinfo-singlecard > div .icon img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 177px; /* Set the width of the icon */
+    height: 269px; /* Set the height of the icon */
+  }
+  .cmp-cardsinfo-twocard > div ul {
+    padding-right: 200px; /* Add padding to the right to move the list away from the image */
   }
