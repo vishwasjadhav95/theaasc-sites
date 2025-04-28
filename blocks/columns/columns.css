@@ -65,7 +65,7 @@
   width: 100%;
 }
 
-.agitation-description {
+.columns.cmp-caregiversinfo.block.columns-1-cols .agitation-description {
   display: flex;
   flex-direction: column;
   align-items: center;
