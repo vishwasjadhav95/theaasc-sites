@@ -35,7 +35,7 @@
   font-size: 2rem;
 }
 
-.icon-container p {
+.columns.cmp-caregiversinfo.block.columns-1-cols .icon-container p {
   font-size: 1.5rem;
   color: #333;
   margin-top: 8px;
@@ -173,6 +173,45 @@
   font-size: 1.25rem;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+/* Style for circular numbers */
+.columns.cmp-listcolumns.block.columns-3-cols .header-container > div {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  font-size: 1.25rem; /* Increase font size of text */
+}
+
+.columns.cmp-listcolumns.block.columns-3-cols .header-container > div::before {
+  counter-increment: card-counter;
+  content: counter(card-counter);
+  width: 43px;
+  height: 43px;
+  flex-shrink: 0;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: #fff;
+  background-color: #0665a3;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Initialize counter for the numbers */
+.columns.cmp-listcolumns.block.columns-3-cols .header-container {
+  counter-reset: card-counter;
+}
+
+.columns.cmp-listcolumns.block.columns-3-cols {
+  margin-left: 180px;
+  margin-right: 224px;
+}
+
+.columns.cmp-listcolumns.block.columns-3-cols .header-container > div p {
+  margin-top: 0;
 }
 
 
