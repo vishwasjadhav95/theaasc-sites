@@ -292,3 +292,11 @@ main .section.highlight {
 .section.alzheimer-infosection .button-container {
   margin-top: 16px;
 }
+
+.section.dataalzheimer-infosection {
+  text-align: center;
+}
+
+.section.dataalzheimer-infosection h2 {
+  color: #170b95;
+}
