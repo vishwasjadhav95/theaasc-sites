@@ -1,0 +1,58 @@
+.section.cardsinfo-container {
+    background-color: #e5e2ff99;
+  }
+  
+.cmp-cardsinfo-title {
+    text-align: center; /* Center align the content */
+  }
+  
+  .cmp-cardsinfo-title h2 {
+    font-family: droid-serif, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    line-height: 1.4;
+    letter-spacing: 0;
+    margin: 0 0 0.5em;
+    color: #170b95; /* Set the color of the h2 */
+  }
+  
+  .cmp-cardsinfo-title p {
+    font-family: droid-serif, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 1.4;
+    letter-spacing: 0;
+    margin: 0 0 0.5em;
+  }
+
+  .cmp-cardsinfo-twocard {
+    display: flex; /* Align the two divs side by side */
+    gap: 20px; /* Add spacing between the cards */
+    justify-content: center; /* Center the cards horizontally */
+  }
+  
+  .cmp-cardsinfo-twocard > div {
+    position: relative;
+    padding: 1.5rem 2rem 2rem;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: -2px 12px 30px 0px rgba(1, 11, 18, 0.2);
+    flex: 1; /* Ensure both cards take equal width */
+    max-width: 500px; /* Optional: Set a max width for the cards */
+  }
+  
+  .cmp-cardsinfo-twocard ul {
+    padding-left: 20px; /* Add padding for list items */
+  }
+  
+  .cmp-cardsinfo-twocard p {
+    margin-bottom: 1rem; /* Add spacing between paragraphs */
+  }
+  
+  .cmp-cardsinfo-twocard .icon img {
+    width: 40px; /* Adjust icon size */
+    height: 40px;
+  }
