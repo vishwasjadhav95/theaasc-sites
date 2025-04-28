@@ -271,3 +271,24 @@ main .section.highlight {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+.section.alzheimer-infosection {
+  background-color: #e5e2ff99;
+  text-align: center;
+  padding: 20px;
+}
+
+.section.alzheimer-infosection .default-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section.alzheimer-infosection h2 {
+  margin-bottom: 16px;
+}
+
+.section.alzheimer-infosection .button-container {
+  margin-top: 16px;
+}
