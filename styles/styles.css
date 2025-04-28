@@ -259,3 +259,13 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+
+.section.hcp-infosection {
+  color: #170b95;
+  font-weight: bold;
+  margin-left: 224px;
+  margin-right: 224px;
+  text-align: center;
+  border-top: 1px solid rgba(37, 84, 195, 0.2);
+  border-bottom: 1px solid rgba(37, 84, 195, 0.2);
+}

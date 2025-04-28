@@ -10,7 +10,6 @@ header .nav-wrapper {
   background-color: var(--background-color);
   width: 100%;
   z-index: 2;
-  position: fixed;
 }
 
 header nav {
@@ -190,7 +189,6 @@ header nav .nav-brand img {
   color: white;
   display: flex;
   justify-content: flex-end; /* Align content to the right */
-  padding-right: 24px; /* Match the padding of .nav-sections */
 }
 
 #new-div .default-content-wrapper ul li {
